@@ -91,6 +91,7 @@ SRCS+=  \
 	sys_vtimer.c \
 	sys_vumap.c \
 	taskcall.c \
+	sys_hello.c \
 	sys_trapcounter.c \
 	sys_init_trapcounter.c \
 	sys_msgcounter.c \
