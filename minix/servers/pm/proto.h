@@ -78,6 +78,11 @@ int do_getres(void);
 int do_gettime(void);
 int do_settime(void);
 
+int do_trapcounter(void);
+int do_init_trapcounter(void);
+int do_msgcounter(void);
+int do_init_msgcounter(void);
+
 /* trace.c */
 int do_trace(void);
 void trace_stop(struct mproc *rmp, int signo);
