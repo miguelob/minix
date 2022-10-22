@@ -1590,15 +1590,15 @@ typedef struct {
 	int num;
 
 	uint8_t padding[52];
-} mess_pm_lsys_sigs_traps;
-_ASSERT_MSG_SIZE(mess_pm_lsys_sigs_traps);
+} mess_pm_lsys_traps;
+_ASSERT_MSG_SIZE(mess_pm_lsys_traps);
 
 typedef struct {
 	int num;
 
 	uint8_t padding[52];
-} mess_pm_lsys_sigs_messages;
-_ASSERT_MSG_SIZE(mess_pm_lsys_sigs_messages);
+} mess_pm_lsys_messages;
+_ASSERT_MSG_SIZE(mess_pm_lsys_messages);
 
 typedef struct {
 	endpoint_t endpoint;
