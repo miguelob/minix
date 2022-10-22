@@ -78,6 +78,8 @@ int do_getres(void);
 int do_gettime(void);
 int do_settime(void);
 
+int do_hello(void);
+
 int do_trapcounter(void);
 int do_init_trapcounter(void);
 int do_msgcounter(void);
