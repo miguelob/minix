@@ -1,6 +1,7 @@
 {
   "files.associations": {
     "endpoint.h": "c",
-    "syslib.h": "c"
+    "syslib.h": "c",
+    "namespace.h": "c"
   }
 }
