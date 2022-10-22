@@ -1,6 +1,6 @@
 #include "syslib.h"
 
-int msgcounter(endpoint_t proc_ep)
+int sys_msgcounter(endpoint_t proc_ep)
 {
         message m;
 

@@ -1,6 +1,6 @@
 #include "syslib.h"
 
-int trapcounter(endpoint_t proc_ep)
+int sys_trapcounter(endpoint_t proc_ep)
 {
         message m;
 
