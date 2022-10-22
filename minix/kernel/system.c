@@ -415,6 +415,10 @@ int sig_nr;			/* signal to be sent */
   int sig_mgr_proc_nr;
   int s;
 
+  // TODO HW2
+  // if sig_nr == SIGTRAP
+  //TODO : Increment trapcounter_value or call a new system call to do so
+
   /* Lookup signal manager. */
   rp = proc_addr(proc_nr);
   sig_mgr = priv(rp)->s_sig_mgr;
