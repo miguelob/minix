@@ -91,6 +91,10 @@ SRCS+=  \
 	sys_vtimer.c \
 	sys_vumap.c \
 	taskcall.c \
+	trapcount.c \
+	init_trapcount.c \
+	msgcount.c \
+	init_msgcount.c \
 	tickdelay.c \
 	timers.c \
 	vm_cache.c \

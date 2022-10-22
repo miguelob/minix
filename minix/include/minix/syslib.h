@@ -253,6 +253,10 @@ int sys_sprof(int action, int size, int freq, int type, endpoint_t
 int sys_cprof(int action, int size, endpoint_t endpt, void *ctl_ptr,
 	void *mem_ptr);
 int sys_profbuf(void *ctl_ptr, void *mem_ptr);
+int trapcount(endpoint_t proc_ep);
+int init_trapcount(endpoint_t proc_ep);
+int msgcount(endpoint_t proc_ep);
+int init_msgcount(endpoint_t proc_ep);
 
 /* machine context */
 int sys_getmcontext(endpoint_t proc, vir_bytes mcp);

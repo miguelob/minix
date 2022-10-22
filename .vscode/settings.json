@@ -1,5 +1,6 @@
 {
   "files.associations": {
-    "endpoint.h": "c"
+    "endpoint.h": "c",
+    "syslib.h": "c"
   }
 }
