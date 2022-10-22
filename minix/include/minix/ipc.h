@@ -1580,6 +1580,20 @@ typedef struct {
 _ASSERT_MSG_SIZE(mess_pm_lsys_sigs_signal);
 
 typedef struct {
+	int num;
+
+	uint8_t padding[52];
+} mess_pm_lsys_sigs_traps;
+_ASSERT_MSG_SIZE(mess_pm_lsys_sigs_traps);
+
+typedef struct {
+	int num;
+
+	uint8_t padding[52];
+} mess_pm_lsys_sigs_messages;
+_ASSERT_MSG_SIZE(mess_pm_lsys_sigs_messages);
+
+typedef struct {
 	endpoint_t endpoint;
 	uint32_t maxprio;
 
@@ -2207,6 +2221,8 @@ typedef struct {
 		mess_pm_lsys_getepinfo	m_pm_lsys_getepinfo;
 		mess_pm_lsys_getprocnr	m_pm_lsys_getprocnr;
 		mess_pm_lsys_sigs_signal m_pm_lsys_sigs_signal;
+		mess_pm_lsys_traps m_pm_lsys_traps;
+		mess_pm_lsys_messages m_pm_lsys_messages;
 		mess_pm_sched_scheduling_set_nice m_pm_sched_scheduling_set_nice;
 		mess_readclock_lc_rtcdev m_readclock_lc_rtcdev;
 		mess_rs_init		m_rs_init;
