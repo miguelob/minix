@@ -2,6 +2,7 @@
   "files.associations": {
     "endpoint.h": "c",
     "syslib.h": "c",
-    "namespace.h": "c"
+    "namespace.h": "c",
+    "init_trapcounter.h": "c"
   }
 }
