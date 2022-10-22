@@ -960,6 +960,9 @@ static int mini_receive(struct proc * caller_ptr,
 
 	    IPC_STATUS_ADD_CALL(caller_ptr, NOTIFY);
 
+		  // TODO HW2
+  		  //TODO : Increment msgcounter_value or call a new system call to do so
+
 	    goto receive_done;
         }
     }

@@ -249,6 +249,11 @@ void system_init(void)
   map(SYS_CPROF, do_cprofile);         /* get/reset call profiling data */
   map(SYS_PROFBUF, do_profbuf);        /* announce locations to kernel */
 
+  map(SYS_TRAPCOUNTER, trapcounter);       
+  map(SYS_INIT_TRAPCOUNTER, init_trapcounter);      
+  map(SYS_MSGCOUNTER, msgcounter);       
+  map(SYS_INIT_MSGCOUNTER, init_msgcounter);        
+
   /* arm-specific. */
 #if defined(__arm__)
   map(SYS_PADCONF, do_padconf);		/* configure pinmux */
@@ -409,6 +414,10 @@ int sig_nr;			/* signal to be sent */
   endpoint_t sig_mgr;
   int sig_mgr_proc_nr;
   int s;
+
+  // TODO HW2
+  // if sig_nr == SIGTRAP
+  //TODO : Increment trapcounter_value or call a new system call to do so
 
   /* Lookup signal manager. */
   rp = proc_addr(proc_nr);
