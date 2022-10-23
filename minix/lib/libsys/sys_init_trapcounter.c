@@ -4,12 +4,12 @@
  {
          message m;
 
-         ret = _kernel_call(SYS_INIT_TRAPCOUNTER, &m);
+         int ret = _kernel_call(SYS_INIT_TRAPCOUNTER, &m);
          if(ret != OK){
          		printf("libsys: Error in _kernel_call(SYS_INIT_TRAPCOUNTER). Error %d", ret);
          		return ret;
          	}
 
-         	*trapcount = m.m_pm_trapcounter.num;
+         	*trapcount = m.m_pm_lsys_trapcounter.num;
          	return(OK);
  }

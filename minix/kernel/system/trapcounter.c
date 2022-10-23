@@ -6,6 +6,6 @@
   *===========================================================================*/
  int trapcounter(struct proc *caller_ptr, message *m_ptr)
  {
-	 printf("trapcounter executed from kernel side");
+	 //printf("trapcounter executed from kernel side");
      return (OK);
  }

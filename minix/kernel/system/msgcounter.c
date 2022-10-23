@@ -7,6 +7,6 @@
 
  int msgcounter(struct proc *caller_ptr, message *m_ptr)
  {
-	 printf("msgcounter executed from kernel side");
+	 //printf("msgcounter executed from kernel side");
      return (OK);
  }
