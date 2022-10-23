@@ -58,12 +58,13 @@
 #define PM_GETEPINFO		(PM_BASE + 45)
 #define PM_GETPROCNR		(PM_BASE + 46)
 #define PM_GETSYSINFO		(PM_BASE + 47)
-#define PM_TRAPCOUNTER		(PM_BASE + 48)
-#define PM_INIT_TRAPCOUNTER		(PM_BASE + 49)
-#define PM_MSGCOUNTER		(PM_BASE + 50)
-#define PM_INIT_MSGCOUNTER		(PM_BASE + 51)
+#define PM_HELLO			(PM_BASE + 48)
+#define PM_INIT_TRAPCOUNTER	(PM_BASE + 49)
+#define PM_TRAPCOUNTER		(PM_BASE + 50)
+#define PM_INIT_MSGCOUNTER	(PM_BASE + 51)
+#define	PM_MSGCOUNTER		(PM_BASE + 52)
 
-#define NR_PM_CALLS		52	/* highest number from base plus one */
+#define NR_PM_CALLS		53	/* highest number from base plus one */
 
 /*===========================================================================*
  *				Calls to VFS				     *

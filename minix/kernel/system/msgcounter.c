@@ -1,12 +1,12 @@
 #include "kernel/system.h"
 #include <minix/endpoint.h>
 
-/*===========================================================================*
- *                                msgcounter                                  *
- *===========================================================================*/
+ /*===========================================================================*
+  *                                msgcounter                                  *
+  *===========================================================================*/
 
-int msgcounter(struct proc *caller_ptr, message *m_ptr)
-{
-    printf("Messages counter: %d", msgcounter_value);
-    return (OK);
-}
+ int msgcounter(struct proc *caller_ptr, message *m_ptr)
+ {
+	 //printf("msgcounter executed from kernel side");
+     return (OK);
+ }

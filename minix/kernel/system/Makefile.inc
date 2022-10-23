@@ -40,6 +40,7 @@ SRCS+= 	\
 	do_schedule.c \
 	do_schedctl.c \
 	do_statectl.c \
+	do_hello.c \
 	init_trapcounter.c \
 	init_msgcounter.c \
 	trapcounter.c \

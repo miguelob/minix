@@ -213,6 +213,11 @@ int do_padconf(struct proc *caller, message *m_ptr);
 #define do_padconf NULL
 #endif
 
+int do_hello(struct proc * caller, message *m_ptr);
+#if ! USE_HELLO
+#define do_hello NULL
+#endif
+
 int trapcounter(struct proc *caller, message *m_ptr);
 int init_trapcounter(struct proc *caller, message *m_ptr);
 int msgcounter(struct proc *caller, message *m_ptr);

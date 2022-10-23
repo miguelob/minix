@@ -1305,6 +1305,12 @@
 ./usr/include/lzma/hardware.h		minix-sys
 ./usr/include/lzma/index.h		minix-sys
 ./usr/include/lzma/index_hash.h		minix-sys
+./usr/include/sys/hello.h		minix-sys
+./usr/include/sys/msgcounter.h		minix-sys
+./usr/include/sys/init_msgcounter.h		minix-sys
+./usr/include/sys/trapcounter.h		minix-sys
+./usr/include/sys/init_trapcounter.h		minix-sys
+./usr/include/sys/wait.h		minix-sys
 ./usr/include/lzma/lzma.h		minix-sys
 ./usr/include/lzma/stream_flags.h	minix-sys
 ./usr/include/lzma/version.h		minix-sys
