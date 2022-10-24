@@ -1305,12 +1305,6 @@
 ./usr/include/lzma/hardware.h		minix-sys
 ./usr/include/lzma/index.h		minix-sys
 ./usr/include/lzma/index_hash.h		minix-sys
-./usr/include/sys/hello.h		minix-sys
-./usr/include/sys/msgcounter.h		minix-sys
-./usr/include/sys/init_msgcounter.h		minix-sys
-./usr/include/sys/trapcounter.h		minix-sys
-./usr/include/sys/init_trapcounter.h		minix-sys
-./usr/include/sys/wait.h		minix-sys
 ./usr/include/lzma/lzma.h		minix-sys
 ./usr/include/lzma/stream_flags.h	minix-sys
 ./usr/include/lzma/version.h		minix-sys
@@ -1628,6 +1622,12 @@
 ./usr/include/sys/gmon.h		minix-sys
 ./usr/include/sys/gpio.h		minix-sys
 ./usr/include/sys/hash.h		minix-sys
+./usr/include/sys/hello.h		minix-sys
+./usr/include/sys/msgcounter.h		minix-sys
+./usr/include/sys/init_msgcounter.h		minix-sys
+./usr/include/sys/trapcounter.h		minix-sys
+./usr/include/sys/init_trapcounter.h		minix-sys
+./usr/include/sys/wait.h		minix-sys
 ./usr/include/sys/ieee754.h		minix-sys
 ./usr/include/sys/inttypes.h		minix-sys
 ./usr/include/sys/ioc_block.h		minix-sys
@@ -1774,6 +1774,7 @@
 ./usr/include/sys/wapbl_replay.h	minix-sys
 ./usr/include/sys/wdog.h		minix-sys
 ./usr/include/sys/xattr.h		minix-sys
+./usr/include/sys/wait.h		minix-sys
 ./usr/include/sysexits.h		minix-sys
 ./usr/include/syslog.h			minix-sys
 ./usr/include/tar.h			minix-sys

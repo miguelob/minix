@@ -1600,6 +1600,7 @@ typedef struct {
 } mess_pm_lsys_msgcounter;
 _ASSERT_MSG_SIZE(mess_pm_lsys_msgcounter);
 
+
 typedef struct {
 	endpoint_t endpoint;
 	uint32_t maxprio;
@@ -2043,6 +2044,7 @@ typedef struct {
 	uint8_t padding[51];
 } mess_vmmcp_reply;
 _ASSERT_MSG_SIZE(mess_vmmcp_reply);
+
 
 typedef struct {
 	endpoint_t m_source;		/* who sent the message */

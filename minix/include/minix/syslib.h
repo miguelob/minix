@@ -255,10 +255,11 @@ int sys_cprof(int action, int size, endpoint_t endpt, void *ctl_ptr,
 int sys_profbuf(void *ctl_ptr, void *mem_ptr);
 
 int sys_hello(endpoint_t proc_ep, int *hello_count);
+
 int sys_trapcounter(endpoint_t proc_ep, int *trapcounter);
 int sys_init_trapcounter(endpoint_t proc_ep, int *trapcounter);
 int sys_msgcounter(endpoint_t proc_ep, int *msgcounter);
-int sys_init_msgcouner(endpoint_t proc_ep, int *msgcounter);
+int sys_init_msgcounter(endpoint_t proc_ep, int *msgcounter);
 
 /* machine context */
 int sys_getmcontext(endpoint_t proc, vir_bytes mcp);

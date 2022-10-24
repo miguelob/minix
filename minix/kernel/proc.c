@@ -44,6 +44,8 @@
 
 #include <minix/syslib.h>
 
+
+
 /* Scheduling and message passing functions */
 static void idle(void);
 /**
@@ -960,8 +962,8 @@ static int mini_receive(struct proc * caller_ptr,
 
 	    IPC_STATUS_ADD_CALL(caller_ptr, NOTIFY);
 
-		  // TODO HW2
-  		  //TODO : Increment msgcounter_value or call a new system call to do so
+	    //message m;
+	    //_kernel_call(SYS_MSGCOUNTER, &m);
 
 	    goto receive_done;
         }
