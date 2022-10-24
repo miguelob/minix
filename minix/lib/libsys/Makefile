@@ -90,12 +90,12 @@ SRCS+=  \
 	sys_vsafecopy.c \
 	sys_vtimer.c \
 	sys_vumap.c \
-	taskcall.c \
 	sys_hello.c \
-	sys_trapcounter.c \
 	sys_init_trapcounter.c \
-	sys_msgcounter.c \
+	sys_trapcounter.c \
 	sys_init_msgcounter.c \
+	sys_msgcounter.c \
+	taskcall.c \
 	tickdelay.c \
 	timers.c \
 	vm_cache.c \
@@ -108,7 +108,7 @@ SRCS+=  \
 	vm_procctl.c \
 	vm_query_exit.c \
 	vm_set_priv.c \
-	vm_update.c
+	vm_update.c 
 
 .if ${MKPCI} != "no"
 SRCS+=	pci_attr_r16.c \

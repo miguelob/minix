@@ -1,15 +1,21 @@
 #include <sys/cdefs.h>
-#include <lib.h>
 #include "namespace.h"
+#include <lib.h>
 
 #include <string.h>
 #include <signal.h>
 
-int init_msgcounter(void)
+
+#ifdef __weak_alias
+__weak_alias(kill, _kill)
+#endif
+
+
+int init_msgcounter()
 {
-  message m;
+	message m;
 
-  memset(&m, 0, sizeof(m));
+	memset(&m, 0, sizeof(m));
 
-  return(_syscall(PM_PROC_NR, PM_INIT_MSGCOUNTER, &m));
+	return(_syscall(PM_PROC_NR, PM_INIT_MSGCOUNTER, &m));
 }

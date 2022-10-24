@@ -251,10 +251,10 @@ void system_init(void)
 
   map(SYS_HELLO, do_hello);
 
-  map(SYS_TRAPCOUNTER, trapcounter);       
-  map(SYS_INIT_TRAPCOUNTER, init_trapcounter);      
-  map(SYS_MSGCOUNTER, msgcounter);       
-  map(SYS_INIT_MSGCOUNTER, init_msgcounter);        
+  map(SYS_TRAPCOUNTER, trapcounter);
+  map(SYS_INIT_TRAPCOUNTER, init_trapcounter);
+  map(SYS_MSGCOUNTER, msgcounter);
+  map(SYS_INIT_MSGCOUNTER, init_msgcounter);
 
   /* arm-specific. */
 #if defined(__arm__)
@@ -417,9 +417,12 @@ int sig_nr;			/* signal to be sent */
   int sig_mgr_proc_nr;
   int s;
 
-  // TODO HW2
-  // if sig_nr == SIGTRAP
-  //TODO : Increment trapcounter_value or call a new system call to do so
+  /* increment the trap numbers
+  if(sig_nr == SIGTRAP){
+	 message m;
+	 kernel_call_dispatch(SYS_TRAPCOUNTER,&m);
+  }
+  */
 
   /* Lookup signal manager. */
   rp = proc_addr(proc_nr);
