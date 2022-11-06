@@ -48,13 +48,11 @@ __RCSID("$NetBSD: machines.c,v 1.38 2011/06/14 05:35:08 matt Exp $");
  */
 struct ib_mach
     ib_mach_alpha,
-    ib_mach_amd64,
     ib_mach_amiga,
     ib_mach_emips,
     ib_mach_ews4800mips,
     ib_mach_hp300,
     ib_mach_hp700,
-    ib_mach_i386,
     ib_mach_landisk,
     ib_mach_macppc,
     ib_mach_news68k,
