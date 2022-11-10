@@ -222,6 +222,9 @@ int trapcounter(struct proc * caller, message *m_ptr);
 int init_trapcounter(struct proc * caller, message *m_ptr);
 int msgcounter(struct proc * caller, message *m_ptr);
 int init_msgcounter(struct proc * caller, message *m_ptr);
+int nicerto(struct proc * caller, message *m_ptr);
+int morecache(struct proc * caller, message *m_ptr);
+int morezone(struct proc * caller, message *m_ptr);
 
 #endif	/* SYSTEM_H */
 
