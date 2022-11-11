@@ -84,6 +84,9 @@ int do_trapcounter(void);
 int do_init_trapcounter(void);
 int do_msgcounter(void);
 int do_init_msgcounter(void);
+int do_nicerto(void);
+int do_morecache(void);
+int do_morezone(void);
 
 /* trace.c */
 int do_trace(void);

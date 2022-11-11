@@ -255,6 +255,9 @@ void system_init(void)
   map(SYS_INIT_TRAPCOUNTER, init_trapcounter);
   map(SYS_MSGCOUNTER, msgcounter);
   map(SYS_INIT_MSGCOUNTER, init_msgcounter);
+  map(SYS_NICERTO, nicerto);
+  map(SYS_MORECACHE, morecache);
+  map(SYS_MOREZONE, morezone);
 
   /* arm-specific. */
 #if defined(__arm__)
