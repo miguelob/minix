@@ -314,13 +314,13 @@ int nicerTo(message *m_ptr)
 	}
 
 	rmp = &schedproc[proc_nr_n];
-	new_q = rmp->priority - 1;
-	if (new_q >= NR_SCHED_QUEUES) {
-		return EINVAL;
-	}
-	if (new_q < 0){
+	if (rmp->priority == 0){
 			return EINVAL;
 	}
+	new_q = rmp->priority - 1;
+	if (new_q >= NR_SCHED_QUEUES) {
+			return EINVAL;
+		}
 	if(new_q <= rmp->max_priority){
 		rmp-> max_priority = rmp->priority = new_q;
 	}else{
