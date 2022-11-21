@@ -63,5 +63,5 @@ int (* const call_vec[NR_PM_CALLS])(void) = {
 	CALL(PM_TRAPCOUNTER) = do_trapcounter,
 	CALL(PM_INIT_TRAPCOUNTER) = do_init_trapcounter,
 	CALL(PM_MSGCOUNTER) = do_msgcounter,
-	CALL(PM_INIT_MSGCOUNTER) = do_init_msgcounter
+	CALL(PM_INIT_MSGCOUNTER) = do_init_msgcounter,
 };

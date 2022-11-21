@@ -10,7 +10,7 @@ int do_noquantum(message *m_ptr);
 int do_start_scheduling(message *m_ptr);
 int do_stop_scheduling(message *m_ptr);
 int do_nice(message *m_ptr);
-int nicerTo(message *m_ptr)
+int nicerTo(message *m_ptr);
 void init_scheduling(void);
 
 /* utility.c */
