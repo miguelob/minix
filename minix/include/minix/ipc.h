@@ -1601,28 +1601,6 @@ typedef struct {
 _ASSERT_MSG_SIZE(mess_pm_lsys_msgcounter);
 
 typedef struct {
-	int num;
-
-	uint8_t padding[52];
-} mess_pm_lsys_nicerto;
-_ASSERT_MSG_SIZE(mess_pm_lsys_nicerto);
-
-typedef struct {
-	int num;
-
-	uint8_t padding[52];
-} mess_pm_lsys_morecache;
-_ASSERT_MSG_SIZE(mess_pm_lsys_morecache);
-
-typedef struct {
-	int num;
-
-	uint8_t padding[52];
-} mess_pm_lsys_morezone;
-_ASSERT_MSG_SIZE(mess_pm_lsys_morezone);
-
-
-typedef struct {
 	endpoint_t endpoint;
 	uint32_t maxprio;
 

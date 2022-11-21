@@ -42,10 +42,7 @@ SRCS+= 	\
 	do_statectl.c \
 	do_hello.c \
 	init_trapcounter.c \
-	init_msgcounter.c \
-	nicerto.c \
-	morecache \
-	morezone
+	init_msgcounter.c
 
 .if ${MACHINE_ARCH} == "i386"
 SRCS+=  \

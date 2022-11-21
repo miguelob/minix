@@ -260,10 +260,6 @@ int sys_trapcounter(endpoint_t proc_ep, int *trapcounter);
 int sys_init_trapcounter(endpoint_t proc_ep, int *trapcounter);
 int sys_msgcounter(endpoint_t proc_ep, int *msgcounter);
 int sys_init_msgcounter(endpoint_t proc_ep, int *msgcounter);
-int sys_nicerto(endpoint_t proc_ep, int *nicerto);
-int sys_morecache(endpoint_t proc_ep, int *morecache);
-int sys_morezone(endpoint_t proc_ep, int *morezone);
-
 /* machine context */
 int sys_getmcontext(endpoint_t proc, vir_bytes mcp);
 int sys_setmcontext(endpoint_t proc, vir_bytes mcp);

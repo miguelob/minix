@@ -268,12 +268,9 @@
 #define SYS_INIT_TRAPCOUNTER (KERNEL_CALL + 60) /* sys_padconf() */
 #define SYS_MSGCOUNTER (KERNEL_CALL + 61)		/* sys_padconf() */
 #define SYS_INIT_MSGCOUNTER (KERNEL_CALL + 62)	/* sys_padconf() */
-#define SYS_NICERTO (KERNEL_CALL + 63)	/* sys_padconf() */
-#define SYS_MORECACHE (KERNEL_CALL + 64)	/* sys_padconf() */
-#define SYS_MOREZONE (KERNEL_CALL + 65)	/* sys_padconf() */
 
 /* Total */
-#define NR_SYS_CALLS	66	/* number of kernel calls */
+#define NR_SYS_CALLS	63	/* number of kernel calls */
 
 #define SYS_CALL_MASK_SIZE BITMAP_CHUNKS(NR_SYS_CALLS)
 
