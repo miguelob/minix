@@ -184,7 +184,45 @@ struct buf *lmfs_get_block(register dev_t dev, register block_t block,
 {
 	return lmfs_get_block_ino(dev, block, only_search, VMC_NO_INODE, 0);
 }
+/*===========================================================================*
+ *				do_more_cache		     *
+ *===========================================================================*/
+void do_more_cache(int new_nr_bufs)
+{
+	/* Initialize the buffer pool. */
+	register struct buf *bp;
+	int old_nr_bufs;
 
+	if(!(buf == calloc(sizeof(buf[0]), new_nr_bufs))) {
+		panic("libminixfs: could not allocate buffer pool");
+	}
+
+	if(buf_hash) {
+		free(buf_hash);
+	}
+	if(!(buf_hash = calloc(sizeof(buf_hash[0]), new_nr_bufs))) {
+		panic("libminixfs: could not allocate buffer hash");
+	}
+
+	old_nr_bufs = nr_bufs;
+	nr_bufs = nr_bufs + new_nr_bufs;
+
+	for(bp = &buf[old_nr_bufs]; bp < &buf[nr_bufs]; bp++) {
+		bp->lmfs_dev = NO_DEV;
+		bp->lmfs_block = NO_BLOCK;
+		bp->lmfs_next = bp + 1;
+		bp->lmfs_prev = bp - 1;
+		bp->data = NULL;
+		bp->lmfs_bytes = 0;
+	}
+
+	/* Link the new buffers into the free list. */
+	rear.lmfs_next = buf[old_nr_bufs];
+	rear = &buf[nr_bufs - 1];
+	rear -> lmfs_next = NULL;
+
+	for (bp = &buf[old_nr_bufs]; bp < &buf[nr_bufs]; bp++) bp->lmfs_hash = bp->lmfs_next;
+}
 void munmap_t(void *a, int len)
 {
 	vir_bytes av = (vir_bytes) a;
