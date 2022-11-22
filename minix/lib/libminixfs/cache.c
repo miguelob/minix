@@ -29,6 +29,7 @@ static unsigned int bufs_in_use;/* # bufs currently in use (not on free list)*/
 
 static void rm_lru(struct buf *bp);
 static void read_block(struct buf *);
+static void do_more_cache(int new_nr_bufs);
 static void flushall(dev_t dev);
 static void freeblock(struct buf *bp);
 static void cache_heuristic_check(int major);
@@ -217,7 +218,7 @@ void do_more_cache(int new_nr_bufs)
 	}
 
 	/* Link the new buffers into the free list. */
-	rear.lmfs_next = buf[old_nr_bufs];
+	rear.lmfs_next -> buf[old_nr_bufs];
 	rear = &buf[nr_bufs - 1];
 	rear -> lmfs_next = NULL;
 
