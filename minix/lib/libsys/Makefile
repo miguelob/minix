@@ -95,9 +95,6 @@ SRCS+=  \
 	sys_trapcounter.c \
 	sys_init_msgcounter.c \
 	sys_msgcounter.c \
-	sys_nicerto.c \
-	sys_morecache.c \
-	sys_morezone.c \
 	taskcall.c \
 	tickdelay.c \
 	timers.c \

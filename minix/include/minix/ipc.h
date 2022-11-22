@@ -1601,28 +1601,6 @@ typedef struct {
 _ASSERT_MSG_SIZE(mess_pm_lsys_msgcounter);
 
 typedef struct {
-	int num;
-
-	uint8_t padding[52];
-} mess_pm_lsys_nicerto;
-_ASSERT_MSG_SIZE(mess_pm_lsys_nicerto);
-
-typedef struct {
-	int num;
-
-	uint8_t padding[52];
-} mess_pm_lsys_morecache;
-_ASSERT_MSG_SIZE(mess_pm_lsys_morecache);
-
-typedef struct {
-	int num;
-
-	uint8_t padding[52];
-} mess_pm_lsys_morezone;
-_ASSERT_MSG_SIZE(mess_pm_lsys_morezone);
-
-
-typedef struct {
 	endpoint_t endpoint;
 	uint32_t maxprio;
 
@@ -2247,16 +2225,13 @@ typedef struct {
 		mess_pm_lc_sigset	m_pm_lc_sigset;
 		mess_pm_lc_time		m_pm_lc_time;
 		mess_pm_lc_waitpid	m_pm_lc_waitpid;
-		mess_pm_lexec_exec_new	m_pm_lexec_exec_new;
+		mess_pm_lexec_exec_new	m_pm_lexec_exec_new;ß
 		mess_pm_lsys_getepinfo	m_pm_lsys_getepinfo;
 		mess_pm_lsys_getprocnr	m_pm_lsys_getprocnr;
 		mess_pm_lsys_sigs_signal m_pm_lsys_sigs_signal;
 		mess_pm_lsys_hello m_pm_lsys_hello;
 		mess_pm_lsys_trapcounter m_pm_lsys_trapcounter;
 		mess_pm_lsys_msgcounter m_pm_lsys_msgcounter;
-		mess_pm_lsys_nicerto m_pm_lsys_nicerto;
-		mess_pm_lsys_morecache m_pm_lsys_morecache;
-		mess_pm_lsys_morezone m_pm_lsys_morezone;
 		mess_pm_sched_scheduling_set_nice m_pm_sched_scheduling_set_nice;
 		mess_readclock_lc_rtcdev m_readclock_lc_rtcdev;
 		mess_rs_init		m_rs_init;

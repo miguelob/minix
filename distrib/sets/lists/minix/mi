@@ -1,4 +1,3 @@
-
 #
 # Sorted using sort_set.sh in releasetools.
 # to add an entry simply add it at the end of the
@@ -1627,9 +1626,6 @@
 ./usr/include/sys/init_msgcounter.h		minix-sys
 ./usr/include/sys/trapcounter.h		minix-sys
 ./usr/include/sys/init_trapcounter.h		minix-sys
-./usr/include/sys/nicerto.h		minix-sys
-./usr/include/sys/morecache.h		minix-sys
-./usr/include/sys/morezone.h		minix-sys
 ./usr/include/sys/wait.h		minix-sys
 ./usr/include/sys/ieee754.h		minix-sys
 ./usr/include/sys/inttypes.h		minix-sys
